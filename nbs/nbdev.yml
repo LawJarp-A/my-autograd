@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "my-autograd"
+  site-url: "https://LawJarp-A.github.io/my-autograd"
+  description: "A from scratch implementation of autograd function as used in Pytorch. Derived from Anhys micrograd."
+  repo-branch: main
+  repo-url: "https://github.com/LawJarp-A/my-autograd"
