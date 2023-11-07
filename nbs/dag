@@ -1,36 +1,36 @@
 digraph {
 	graph [nodesep=0.4 rankdir=LR ranksep=0.4]
-	140343689091856 [label="y
+	139827597088656 [label="y
 Op: ReLU
 Data: 5
 Gradient: 1
 Parameter? True" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140343689317584 -> 140343689091856
-	140343689317584 [label="z
+	139827597089040 -> 139827597088656
+	139827597089040 [label="z
 Op: +
 Data: 5
 Gradient: 1
 Parameter? True" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140343687823568 -> 140343689317584
-	140343687823568 [label="
+	139827597089424 -> 139827597089040
+	139827597089424 [label="
 Op: *
 Data: 3
 Gradient: 1
 Parameter? True" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140343689319056 -> 140343687823568
-	140343689319056 [label="w
+	139827597089296 -> 139827597089424
+	139827597089296 [label="w
 Op: 
 Data: 1
 Gradient: 3
 Parameter? True" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140343689318928 -> 140343687823568
-	140343689318928 [label="x
+	139827597082704 -> 139827597089424
+	139827597082704 [label="x
 Op: 
 Data: 3
 Gradient: 1
 Parameter? True" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140343689318864 -> 140343689317584
-	140343689318864 [label="b
+	139827597088848 -> 139827597089040
+	139827597088848 [label="b
 Op: 
 Data: 2
 Gradient: 1
