@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-autograd",
+    "section": "",
+    "text": "Documentation at https://lawjarp-a.github.io/my-autograd/"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "my-autograd",
+    "section": "Install",
+    "text": "Install\npip install my_autograd"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "my-autograd",
+    "section": "How to use",
+    "text": "How to use\nDerive from the class Value. Use that to define the scalar values that you will use to implement backpropagation. Use the backward() method to compute the gradients.\n\n# Define a Linear layer\nw = Value(3.0, label='w')\nb = Value(2.0, label='b')\nx = Value(1.0, label='x')\n\nz = (w * x) + b; z.label = 'z'\n\ny = z.relu(); y.label = 'y'\n\n\n# Visualize the graph\ndraw_dag(y)\n\n\n\n\n\n# Call the backward method to compute gradients\ny.backward()\n\n\n# Visualize the graph again\ndraw_dag(y)"
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nValue\n\n Value (data, _children=(), _op='', label='', is_input=True)\n\nThis class stores the Scalar values that we will use that contain the backpropagation information\n\nsource\n\n\nValue.backward\n\n Value.backward ()\n\nDefine the backward function\n\nsource\n\n\nValue.relu\n\n Value.relu ()\n\nDefine how the ReLU function works on the Value class\n\n# Create a temp Value to test the graphviz function\nw = Value(1, label=\"w\")\nb = Value(2, label=\"b\")\n# Input variable\nx = Value(3, label=\"x\", is_input=True)\nz = w * x + b; z.label = \"z\"\ny = z.relu(); y.label = \"y\"\n\n# Draw the graphviz DAG\ndraw_dag(y)\n\n\n\n\n\ny.backward()\ndraw_dag(y)"
+  }
+]
