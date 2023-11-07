@@ -13,10 +13,25 @@ pip install my_autograd
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+Derive from the class `Value`. Use that to define the scalar values that
+you will use to implement backpropagation. Use the `backward()` method
+to compute the gradients.
 
 ``` python
-1+1
+# Define a Linear layer
+w = Value(3.0, label='w')
+b = Value(2.0, label='b')
+x = Value(1.0, label='x')
+
+z = w * x + b; z.label = 'z'
+
+y = z.relu(); y.label = 'y'
+
+# Compute the gradients
+y.backward()
+
+print('dz/dw =', w.grad)
+print('dz/db =', b.grad)
 ```
 
-    2
+    NameError: name 'Value' is not defined

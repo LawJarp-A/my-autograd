@@ -9,4 +9,6 @@ d = { 'settings': { 'branch': 'main',
                                   'my_autograd.core.Value.__add__': ('core.html#value.__add__', 'my_autograd/core.py'),
                                   'my_autograd.core.Value.__init__': ('core.html#value.__init__', 'my_autograd/core.py'),
                                   'my_autograd.core.Value.__mul__': ('core.html#value.__mul__', 'my_autograd/core.py'),
-                                  'my_autograd.core.Value.backward': ('core.html#value.backward', 'my_autograd/core.py')}}}
+                                  'my_autograd.core.Value.__pow__': ('core.html#value.__pow__', 'my_autograd/core.py'),
+                                  'my_autograd.core.Value.backward': ('core.html#value.backward', 'my_autograd/core.py'),
+                                  'my_autograd.core.Value.relu': ('core.html#value.relu', 'my_autograd/core.py')}}}

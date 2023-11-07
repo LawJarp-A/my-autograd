@@ -1,27 +1,32 @@
 digraph {
 	graph [nodesep=0.4 rankdir=LR ranksep=0.4]
-	140432873622736 [label="y
+	140273752590160 [label="y
+Op: ReLU
+Data: 5
+Gradient: 1" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140273752589648 -> 140273752590160
+	140273752589648 [label="z
 Op: +
 Data: 5
-Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140432873620560 -> 140432873622736
-	140432873620560 [label="
+Gradient: 1" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140273754020688 -> 140273752589648
+	140273754020688 [label="
 Op: *
 Data: 3
-Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140432873621264 -> 140432873620560
-	140432873621264 [label="w
+Gradient: 1" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140273754020560 -> 140273754020688
+	140273754020560 [label="w
 Op: 
 Data: 1
-Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140432873629008 -> 140432873620560
-	140432873629008 [label="x
+Gradient: 3" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140273754019024 -> 140273754020688
+	140273754019024 [label="x
 Op: 
 Data: 3
-Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
-	140432873628816 -> 140432873622736
-	140432873628816 [label="b
+Gradient: 1" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140273754020752 -> 140273752589648
+	140273754020752 [label="b
 Op: 
 Data: 2
-Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+Gradient: 1" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
 }
