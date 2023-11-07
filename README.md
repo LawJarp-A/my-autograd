@@ -23,15 +23,26 @@ w = Value(3.0, label='w')
 b = Value(2.0, label='b')
 x = Value(1.0, label='x')
 
-z = w * x + b; z.label = 'z'
+z = (w * x) + b; z.label = 'z'
 
 y = z.relu(); y.label = 'y'
-
-# Compute the gradients
-y.backward()
-
-print('dz/dw =', w.grad)
-print('dz/db =', b.grad)
 ```
 
-    NameError: name 'Value' is not defined
+``` python
+# Visualize the graph
+draw_dag(y)
+```
+
+![](index_files/figure-commonmark/cell-3-output-1.png)
+
+``` python
+# Call the backward method to compute gradients
+y.backward()
+```
+
+``` python
+# Visualize the graph again
+draw_dag(y)
+```
+
+![](index_files/figure-commonmark/cell-5-output-1.png)

@@ -7,9 +7,10 @@ __all__ = ['Value']
 # This class stores the Scalar values that we will use that contain the backpropagation information
 class Value:
     "This class stores the Scalar values that we will use that contain the backpropagation information"
-    def __init__(self, data, _children=(), _op='', label=""):
+    def __init__(self, data, _children=(), _op='', label="", is_input=True):
         self.data = data
         self.grad = 0
+        self.is_input = is_input
         # The children are the values that were used to calculate this value
         self._children = _children
         # The op is the operation that was used to calculate this value
@@ -89,6 +90,7 @@ class Value:
         
         # For each node in the topological sort from the end, run the backward function
         for v in reversed(topo):
+            
             v._backward()
 
     def __neg__(self): # -self
