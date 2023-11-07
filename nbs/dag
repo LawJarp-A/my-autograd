@@ -1,0 +1,27 @@
+digraph {
+	graph [nodesep=0.4 rankdir=LR ranksep=0.4]
+	140432873622736 [label="y
+Op: +
+Data: 5
+Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140432873620560 -> 140432873622736
+	140432873620560 [label="
+Op: *
+Data: 3
+Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140432873621264 -> 140432873620560
+	140432873621264 [label="w
+Op: 
+Data: 1
+Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140432873629008 -> 140432873620560
+	140432873629008 [label="x
+Op: 
+Data: 3
+Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+	140432873628816 -> 140432873622736
+	140432873628816 [label="b
+Op: 
+Data: 2
+Gradient: 0" fontsize=10 height=0.75 margin=0.1 shape=box width=1.5]
+}

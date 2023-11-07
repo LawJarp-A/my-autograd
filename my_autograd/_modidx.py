@@ -5,4 +5,8 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://LawJarp-A.github.io',
                 'git_url': 'https://github.com/LawJarp-A/my-autograd',
                 'lib_path': 'my_autograd'},
-  'syms': {'my_autograd.core': {'my_autograd.core.foo': ('core.html#foo', 'my_autograd/core.py')}}}
+  'syms': { 'my_autograd.core': { 'my_autograd.core.Value': ('core.html#value', 'my_autograd/core.py'),
+                                  'my_autograd.core.Value.__add__': ('core.html#value.__add__', 'my_autograd/core.py'),
+                                  'my_autograd.core.Value.__init__': ('core.html#value.__init__', 'my_autograd/core.py'),
+                                  'my_autograd.core.Value.__mul__': ('core.html#value.__mul__', 'my_autograd/core.py'),
+                                  'my_autograd.core.Value.backward': ('core.html#value.backward', 'my_autograd/core.py')}}}
